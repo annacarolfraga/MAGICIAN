@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title> MAGICIAN - Codificar & Decodificar</title>
+</head>
+
+<body>
+    <header>
+        <h1 id="titulo">Bem-vindo(a) ao MAGICIAN</h1>
+    </header>
+
+    <img #img src="/img/magician.png" alt="">
+    <h2>Quer fazer uma mágica? Escreva uma palavra abaixo!!!</h2>
+
+    <form>
+        <label for='entradaMensagem'></label>
+        <input type="text" id="entradaMensagem" placeholder="Escreva aqui"> <br>
+
+        <select id='opçoes'>
+            <option value="Escolha Aqui">Escolher código</option>
+            <option value="cifraDeCesar">Cifra de Cesar</option>
+            <option value="base64">Base 64</option>
+        </select>
+
+
+        <input type="number" id="incremento" placeholder="número" min="1" max="25"><br>
+
+        <div class='radio'>
+            <input type="radio" id='codificar' name='radio-Cesar' value="radioCodificar" checked>
+            <label for='codificar' id='labelcodificar'> Codificar </label> <br>
+
+            <br>
+
+            <input type="radio" id='decodificar' name='radio-Cesar' value="radioecodificar" checked>
+            <label for='codificar' id='labeldecodificar'> Decodificar </label> <br>
+        </div>
+
+        <div>
+            <p class="saidaMensagem"></p>
+        </div>
+
+        <input type="submit" value="Codificar" id="submit">
+        <input type="submit" value="Decodificar" id="submit">
+
+
+
+    </form>
+
+    <footer><br>© Anna Carolina Fraga - 2022</footer>
+
+
+    <script src='js/codificar.js'></script>
+</body>
+
+</html>
